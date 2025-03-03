@@ -34,8 +34,7 @@ python -m venv env
 # Activate the environment:
 # On Windows:
 env\Scripts\activate
-# On macOS/Linux:
-source env/bin/activate
+
 ```
 
 ### 3️⃣ **Install Dependencies**
@@ -57,7 +56,7 @@ set OPENAI_API_KEY=your_api_key_here
 ## Running the App 🎯
 Start the **Streamlit web interface** with:
 ```bash
-streamlit run ai_cold_calling.py
+python -m streamlit run main_script.py
 ```
 This will open the app in your browser at:
 ```
