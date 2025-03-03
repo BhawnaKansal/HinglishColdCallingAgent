@@ -1,99 +1,98 @@
 # HinglishColdCallingAgent
 
-## Introduction
-Hey there! 👋 Welcome to the **AI Cold Calling Agent**—a smart, interactive tool designed to make business calls sound more natural and engaging. This AI-powered assistant can hold **Hinglish** conversations for:
+## Overview
+The **Hinglish Cold Calling Agent** is a voice-based assistant designed to conduct natural and engaging business calls in Hinglish. It supports multiple scenarios such as:
 
-1. **Demo Scheduling** – Helping schedule product demos effortlessly.
-2. **Candidate Interviews** – Conducting initial screening interviews like a pro.
-3. **Payment Follow-ups** – Reminding customers about pending payments or new orders.
+- **Demo Scheduling** – Assisting with scheduling product demos.
+- **Candidate Interviewing** – Conducting initial screening interviews.
+- **Payment Follow-ups** – Reminding customers about pending payments.
 
-This project blends **OpenAI’s GPT model** with **voice support (TTS & STT)** and has a simple, easy-to-use **Streamlit UI** for interactions. 🚀
-
----
-
-## Why You’ll Love This Project
-✅ **Natural-Sounding Conversations** (Hinglish Support)  
-✅ **Context-Aware AI Responses**  
-✅ **Talk & Listen with Voice Features**  
-✅ **Easy Web Interface with Streamlit**  
-✅ **Future-Ready with CRM & Payment Integrations**  
+This agent utilizes **OpenAI's GPT model** for intelligent responses, **Speech-to-Text (STT)** for voice input, and **Text-to-Speech (TTS)** for generating audio replies.
 
 ---
 
-## Getting Started
-### 1️⃣ **Clone This Project**
-First, grab a copy of this repository:
+## Features
+✅ **Human-like conversations** in Hinglish  
+✅ **Voice-enabled interactions** (speech-to-text & text-to-speech)  
+✅ **Smart AI-driven responses** with OpenAI GPT-3.5  
+✅ **Streamlit web-based interface** for easy interaction  
+
+---
+
+## Installation
+### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/your-repo-name.git
 cd AI-Cold-Calling-Agent
 ```
 
-### 2️⃣ **Set Up Your Environment** (Optional, but recommended)
+### 2. **Set Up a Virtual Environment (Optional but Recommended)**
 ```bash
 python -m venv env
 # Activate the environment:
 # On Windows:
 env\Scripts\activate
-
+# On macOS/Linux:
+source env/bin/activate
 ```
 
-### 3️⃣ **Install Dependencies**
-We’ve kept things simple—just run:
+### 3. **Install Required Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ **Set Your OpenAI API Key**
-You need an API key from [OpenAI](https://platform.openai.com/). Once you have it, set it up:
+### 4. **Set Up OpenAI API Key**
+Get your OpenAI API key from [OpenAI](https://platform.openai.com/) and set it as an environment variable:
 ```bash
 # Windows (Command Prompt)
 set OPENAI_API_KEY=your_api_key_here
 
+# macOS/Linux
+export OPENAI_API_KEY=your_api_key_here
 ```
 
 ---
 
-## Running the App 🎯
-Start the **Streamlit web interface** with:
+## Running the Application
+### **Start the Streamlit Web Interface**
 ```bash
-python -m streamlit run main_script.py
+streamlit run ai_cold_calling.py
 ```
-This will open the app in your browser at:
+This will launch the app in your browser at:
 ```
 http://localhost:8501
 ```
 
 ---
 
-## Troubleshooting 🛠️
-### **1️⃣ FFmpeg Issues?**
-- Make sure **FFmpeg** is installed and added to your system PATH.
-- Download it from [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html).
-- After installing, check if it works:
-  ```bash
-  ffmpeg -version
-  ```
+## Troubleshooting
+### **1. Issues with Speech Recognition?**
+- Ensure your **microphone** is connected and working.
+- Run Streamlit as **Administrator** on Windows.
 
-### **2️⃣ Permission Denied Errors?**
-- Try **running VS Code as Administrator**.
-- If the temp directory is causing issues, change it in `text_to_speech()`.
-
-### **3️⃣ No Audio Output?**
+### **2. No Audio Output?**
 - Check if your **speakers are on**.
-- Modify `text_to_speech()` to **save in WAV format** instead of MP3.
+- Modify `text_to_speech()` to **use a different audio format** if needed.
+
+### **3. OpenAI API Key Issues?**
+- Make sure you have a **valid API key**.
+- If exceeding rate limits, try **reducing the request frequency**.
 
 ---
 
-## What’s Next? 🚀
-🔹 **Integration with WhatsApp & Telegram** for messaging  
-🔹 **More accurate speech recognition using Whisper API**  
-🔹 **Deploying on AWS/GCP for real-world use**  
+## Future Enhancements
+🚀 Integration with **WhatsApp & Telegram** for messaging  
+🚀 Improved **speech recognition accuracy** using Whisper API  
+🚀 Deployment on **cloud services** (AWS/GCP)  
 
 ---
 
-## Want to Contribute? 🤝
-Love this project? Help make it better! Feel free to **fork, modify, and submit a pull request**. Got ideas? Open an issue and let’s discuss! 
+## Contributing
+If you’d like to contribute, feel free to fork this repo and submit a **pull request**. If you have any feature requests, open an **issue**.
 
 ---
+
+
+
 
 
